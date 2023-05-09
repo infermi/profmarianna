@@ -1,0 +1,76 @@
+---
+import Option from "../components/Option.astro";
+import Corousel from "../components/Corousel.astro";
+import Layout from "../layouts/layout.astro";
+import Contact from "../components/Contact.astro";
+---
+
+<Layout>
+  <main class="relative pb-7">
+    <section
+      class="flex max-h-screen min-h-[75vh] w-full flex-col items-center justify-center"
+    >
+      <Corousel />
+      <h1
+        class="absolute z-20 text-center font-heebo text-4xl font-semibold text-primary-100 drop-shadow-2xl md:text-8xl"
+      >
+        פרופ' מריאנה רחמיאל<br />
+        <span class="text-4xl font-bold text-whitespace md:text-6xl">
+          מומחית באנדוקרינולוגיה ילדים</span
+        >
+      </h1>
+    </section>
+
+    <section class="w-full px-10 pt-6 text-center">
+      <div
+        class="flex flex-col justify-around gap-y-5 px-0 py-5 text-center font-varela sm:flex-row lg:mx-auto lg:w-3/4"
+      >
+        <div>
+          <i
+            class="fa-solid fa-circle-info text-5xl text-gray-700 transition-all duration-300 hover:scale-110 hover:text-green-700"
+          >
+          </i>
+          <p class="text-xl">הערכה יסודית</p>
+        </div>
+        <div>
+          <i
+            class="fa-solid fa-user-doctor text-5xl text-gray-700 transition-all duration-300 hover:scale-110 hover:text-blue-700"
+          ></i>
+          <p class="text-xl">מנוסה בתחום</p>
+        </div>
+        <div>
+          <i
+            class="fa-solid fa-envelope text-5xl text-gray-700 transition-all duration-300 hover:scale-110 hover:text-red-700"
+          ></i>
+          <p class="text-xl">פנוייה לעזור במייל</p>
+        </div>
+        <div>
+          <i
+            class="fa-solid fa-circle-check text-5xl text-gray-700 transition-all duration-300 hover:scale-110 hover:text-yellow-700"
+          ></i>
+          <p class="text-xl">מקצועיות רב תחומית</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="mx-auto max-w-screen-xl px-10 pt-6 text-center">
+      <h1 class="font-heebo text-5xl font-bold text-secondary-500">
+        פרופ' מריאנה רחמיאל
+      </h1>
+      <p class="mt-4 font-varela text-2xl">
+        מומחית באנדוקרינולוגיית ילדים, ומומחית ברפואת ילדים. מנהלת היחידה
+        לאנדוקרינולוגיה ילדים מנהלת המרפאה הרב תחומית לסוכרת ילדים ונוער המרכז
+        הרפואי אסף הרופא. מרצה בכירה, בית הספר לרפואה אוניברסיטת תל אביב.
+        <br />
+        <br />
+      </p>
+      <a
+        href="/about"
+        class="mx-auto block w-fit rounded-3xl bg-action px-5 py-2 font-heebo text-3xl text-white transition-all hover:scale-110 hover:shadow-2xl"
+      >
+        קרא עוד</a
+      >
+    </section>
+    <Contact />
+  </main>
+</Layout>

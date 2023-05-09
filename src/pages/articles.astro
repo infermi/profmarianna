@@ -1,0 +1,144 @@
+---
+import Layout from "../layouts/layout.astro";
+import Contact from "../components/Contact.astro";
+import Blogcard from "../components/Blogcard.astro";
+import Pdfcard from "../components/Pdfcard.astro";
+---
+
+<Layout>
+  <main class="relative pb-7">
+    <div
+      class="flex h-[200px] w-full flex-col items-center justify-center bg-secondary-300"
+    >
+      <h1
+        class="font-heebo text-4xl font-bold text-white sm:text-5xl lg:text-6xl"
+      >
+        מהתקשורת
+      </h1>
+    </div>
+    <section class="mx-auto mt-10 max-w-screen-xl px-4 pb-10">
+      <h3 class="font-heebo text-5xl font-bold">מאמרים:</h3>
+      <div
+        class="mt-8 flex w-full flex-col flex-wrap justify-center gap-5 font-heebo lg:flex-row"
+      >
+        <Blogcard
+          date="2020-6-8"
+          link="https://www.mako.co.il/ninemonth-research/Article-94c793be8139271026.htm"
+          pic="https://img.mako.co.il/2020/06/08/yaelrotemandthenewbornasafharofe_i.jpg"
+          title="לראשונה בישראל: טיפול מהפכני בפגים באמצעות חיישן תת-עורי"
+        >
+          תינוקות רבים סובלים מהפרעה באיזון הסוכר שעלולה להוביל לנזקים בלתי
+          הפיכים. המרכז הרפואי שמיר (אסף הרופא) שילב לאחרונה טכנולוגיה חדישה, בה
+          חיישן מודד את הסוכר במקום בדיקות ודקירות חוזרות ונשנות
+        </Blogcard>
+        <Blogcard
+          date="2022-02-22"
+          link="https://www.mako.co.il/news-med12/obesity_in_adolescents/Article-dfbc21c7e23fe71027.htm"
+          pic="https://img.mako.co.il/2021/06/10/shutterstock_1926913811_autoOrient_i.jpg"
+          title="הילד שלכם חי עם השמנה? אלה כל הטעויות שאסור לכם לעשות"
+        >
+          אל תאשימו אותם, אל תבטיחו להם פרסים וזכרו לאהוב אותם – תמיד ובכל תנאי:
+          אם הילד או הילדה שלכם סובלים מהשמנה, כדאי שתקשיבו לעצות הבאות. דיאטנית
+          ומומחית לאנדוקרינולוגיה ילדים מסבירות כיצד להתמודד עם המצב באופן נכון
+          ומועיל, ומונות את הטעויות מהן כדאי להימנע בדרך
+        </Blogcard>
+        <Blogcard
+          date="2023-02-07"
+          link="https://www.mako.co.il/health-magazine/articles/Article-aad10c1bebb2681027.htm"
+          pic="https://img.mako.co.il/2021/12/22/DSC_5748_autoOrient_w.jpg"
+          title="בעקבות האש שספגה: מירי כהן חושפת את המחלה שגורמת לה לעלות במשקל"
+        >
+          אתמול (שני) פרסמה כהן תמונה בה היא נראית עם 33 קילוגרמים יותר ממשקלה
+          כיום, אשר בעקבותיה ספגה תגובות רבות מעוקביה. לאחר מכן, מיהרה להסביר
+          שזה עניין של בעיה רפואית שגורמת לה לעלות ולרדת במשקל. "סיפרתי לעוקבות
+          שלי שאני סובלת מנטייה להשמנה בגלל תת-פעילות של בלוטת התריס - כל החיים
+          שלי אני עולה ויורדת בגלל זה". מהי הבעיה ממנה סובלת כהן ואיך מזהים
+          אותה?
+        </Blogcard>
+
+        <Blogcard
+          date="2020-06-16"
+          pic="pic1.png"
+          link="https://www.vered-dietkids.co.il/post/2020/06/16/%D7%94%D7%A9%D7%9E%D7%A0%D7%AA-%D7%99%D7%9C%D7%93%D7%99%D7%9D-%D7%A8%D7%90%D7%99%D7%95%D7%9F-%D7%A2%D7%9D-%D7%90%D7%A0%D7%93%D7%95%D7%A7%D7%A8%D7%99%D7%A0%D7%95%D7%9C%D7%95%D7%92%D7%99%D7%AA-%D7%99%D7%9C%D7%93%D7%99%D7%9D-%D7%A4%D7%A8%D7%95%D7%A4-%D7%9E%D7%A8%D7%99%D7%90%D7%A0%D7%94-%D7%A8%D7%97%D7%9E%D7%99%D7%90%D7%9C"
+          title="השמנת ילדים: ראיון עם אנדוקרינולוגית ילדים-פרופ' מריאנה רחמיאל"
+        >
+          להשמנת ילדים יש הרבה סיבות (בדיוק כמו להשמנת מבוגרים). לעיתים קרובות
+          אני עובדת בשיתוף עם אנשי מקצוע נוספים, מתחומים שונים. מאחר שעודף משקל
+          והשמנה הנן תופעות הכוללות סיבות והשלכות על תחומים פיזיולוגיים ורגשיים,
+          לעיתים חשוב מאד להרחיב את הבירור וגם את בחיפוש אחרי סיבוכים נלווים.
+        </Blogcard>
+        <Blogcard
+          date="2013-08-07"
+          link="https://www.onlife.co.il/general/5418"
+          title="דיאטה אצל ילדים חשובה גם לעיכוב ההתפתחות המינית"
+        >
+          ילדים שמנים לא רק סובלים מבעיות בריאותיות קשות ובעיות בדימוי העצמי,
+          אלא עכשיו זה ברור כי זה עלול להשפיע גם על ההתפתחות המינית
+        </Blogcard>
+
+        <Blogcard
+          date="2015-09-08"
+          link="https://www.ynet.co.il/articles/0,7340,L-3597000,00.html"
+          title="למה מיכל בת ה-3 לא מורשית ללכת לגן כמו כולם?"
+        >
+          כ-200 ילדים חולי סוכרת בישראל אמורים ללכת לגן אבל נאלצים להישאר בבית
+          כי אין מי שיממן להם סייעת צמודה. לעדן, אמה של מיכל בת ה-3, הציעה
+          העיריה השתתפות של 50% בעלות הסייעת, אבל גם זה לא עזר. "למי יש 20 אלף
+          שקל בשנה"? היא שואלת וממשיכה לומר לבתה ש"הגן עוד לא התחיל"
+        </Blogcard>
+        <Blogcard
+          date="2014-10-26"
+          link="https://www.ynet.co.il/articles/0,7340,L-4584242,00.html"
+          title="איך לחיות עם סוכרת נעורים (סוג 1)"
+        >
+          איך לאבחן ואיך להצליח לאזן את המחלה? צפו במדי יעקבזון, מנכ"לית האגודה
+          לסוכרת נעורים (סוג 1) בישראל וד"ר מריאנה רחמיאל, מנהלת המרפאה לסוכרת
+          ילדים ונוער במרכז רפואי אסף הרופא מתארחות באולפן ynet ומסבירות איך
+          לחיות עם המחלה
+        </Blogcard>
+
+        <Blogcard
+          date="2014-2-23"
+          link="https://www.haaretz.co.il/news/health/new-research/2014-02-23/ty-article/.premium/0000017f-e894-da9b-a1ff-ecff99be0000"
+          title="איך תדעו אם הילד שלכם גובה וגדל כמו שצריך"
+        >
+          כיצד מעריכים נכונה את גובהו התקין של הילד ומהם הגורמים שיכולים לפגוע
+          בצמיחתו
+        </Blogcard>
+      </div>
+    </section>
+    <section class="mx-auto max-w-screen-xl px-4 py-5">
+      <h3 class="font-heebo text-5xl font-bold">מאמרים נוספים:</h3>
+      <div class="flex flex-wrap justify-center gap-5">
+        <Pdfcard link="/articles/10mistakes.pdf">
+          הטעויות הנפוצות בהערכת גדילת ילדים - שיביאו לתוצאה בלתי הפיכה.
+        </Pdfcard>
+
+        <Pdfcard link="/articles/early_growth.pdf">
+          ראיון בערוץ 2 בנושא התבגרות מינית
+        </Pdfcard>
+
+        <Pdfcard link="/articles/epilepsy_and_hormons.pdf">
+          אפילפסיה והורמונים - מה הקשר?
+        </Pdfcard>
+
+        <Pdfcard link="/articles/lecture_health_for_teens.pdf">
+          הקשר בין בריאות התבגרות וגדילה
+        </Pdfcard>
+
+        <Pdfcard link="/articles/children_growth.pdf">לגדול בשקט</Pdfcard>
+      </div>
+    </section>
+    <section class="mx-auto mt-10 max-w-screen-lg px-4 pb-10">
+      <iframe
+        src="https://www.facebook.com/plugins/video.php?height=314&href=https%3A%2F%2Fwww.facebook.com%2Fmedtronic.diabetes.IL%2Fvideos%2F368955713658608%2F&show_text=false&width=560&t=0"
+        class="mx-auto aspect-video w-full overflow-hidden border-0"
+        scrolling="no"
+        frameborder="0"
+        allowfullscreen="true"
+        allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"
+      ></iframe>
+    </section>
+    <Contact />
+  </main>
+</Layout>

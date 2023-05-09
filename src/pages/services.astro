@@ -1,0 +1,85 @@
+---
+import Layout from "../layouts/layout.astro";
+import Contact from "../components/Contact.astro";
+import Option from "../components/Option.astro";
+const services = [
+  {
+    title: "loremsaa sdaw ddwa da wd",
+    text: `Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi incidunt aperiam dicta molestiae officiis quae sapiente ex nemo, odit soluta similique doloremque impedit hic neque nisi autem pariatur culpa quas.`,
+  },
+  {
+    title: "loremsaa sdaw ddwa da wd",
+    text: `Lorem ipsum dolor sit amet consectetur adipisicing elit.
+     Sequi incidunt aperiam dicta molestiae officiis quae sapiente ex nemo,
+      odit soluta similique doloremque impedit hic neque nisi autem pariatur
+       culpa quas.`,
+  },
+  {
+    title: "loremsaa sdaw ddwa da wd",
+    text: `Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi incidunt aperiam dicta molestiae officiis quae sapiente ex nemo, odit soluta similique doloremque impedit hic neque nisi autem pariatur culpa quas.`,
+  },
+  {
+    title: "loremsaa sdaw ddwa da wd",
+    text: `Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi incidunt aperiam dicta molestiae officiis quae sapiente ex nemo, odit soluta similique doloremque impedit hic neque nisi autem pariatur culpa quas.`,
+  },
+  {
+    title: "loremsaa sdaw ddwa da wd",
+    text: `Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi incidunt aperiam dicta molestiae officiis quae sapiente ex nemo, odit soluta similique doloremque impedit hic neque nisi autem pariatur culpa quas.`,
+  },
+];
+---
+
+<Layout>
+  <main class="relative pb-7">
+    <div
+      class="flex h-[200px] w-full flex-col items-center justify-center bg-secondary-300"
+    >
+      <h1
+        class="font-heebo text-4xl font-bold text-white sm:text-5xl lg:text-6xl"
+      >
+        תחומי טיפול פרופ' מריאנה רחמיאל
+      </h1>
+    </div>
+    <section class="mx-auto mt-10 w-full max-w-screen-xl items-end">
+      <h1 class="font-heebo text-5xl font-bold text-secondary-500">
+        תחומי טיפול
+      </h1>
+      <div
+        class="mt-4 flex flex-wrap justify-center gap-3 font-varela text-lg font-semibold md:px-5 lg:px-16"
+      >
+        <Option
+          icon="hand-holding-heart"
+          link="https://www.shamir.org/he/clinics/pediatrics/endocrinologydiabetesinchildrenandadolescents/diabetesclinicchildrenyoung/"
+        >
+          טיפול בסוכרת ילדים
+        </Option>
+        <Option
+          icon="weight-scale"
+          link="https://www.vered-dietkids.co.il/post/2020/06/16/%D7%94%D7%A9%D7%9E%D7%A0%D7%AA-%D7%99%D7%9C%D7%93%D7%99%D7%9D-%D7%A8%D7%90%D7%99%D7%95%D7%9F-%D7%A2%D7%9D-%D7%90%D7%A0%D7%93%D7%95%D7%A7%D7%A8%D7%99%D7%A0%D7%95%D7%9C%D7%95%D7%92%D7%99%D7%AA-%D7%99%D7%9C%D7%93%D7%99%D7%9D-%D7%A4%D7%A8%D7%95%D7%A4-%D7%9E%D7%A8%D7%99%D7%90%D7%A0%D7%94-%D7%A8%D7%97%D7%9E%D7%99%D7%90%D7%9C"
+        >
+          השמנה
+        </Option>
+        <Option icon="venus-mars" link="/articles/lecture_health_for_teens.pdf">
+          הפרעות בהתבגרות מינית
+        </Option>
+        <Option
+          icon="child"
+          link="https://www.wikirefua.org.il/w/index.php/%D7%A7%D7%95%D7%9E%D7%94_%D7%A0%D7%9E%D7%95%D7%9B%D7%94_-_Short_stature"
+        >
+          הפרעות בגדילה
+        </Option>
+        <Option
+          icon="virus"
+          link="https://www.mako.co.il/health-magazine/articles/Article-aad10c1bebb2681027.htm"
+        >
+          מחלות של בלוטת התריס
+        </Option>
+        <Option icon="brain">הפרעות בתפקוד בלוטת יותרת המוח</Option>
+        <Option icon="venus">איחור והפרעות במחזור</Option>
+        <Option icon="cut">שיעור יתר</Option>
+      </div>
+    </section>
+
+    <Contact />
+  </main>
+</Layout>
